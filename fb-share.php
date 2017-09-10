@@ -11,9 +11,10 @@
 
  function ghowkay_add_fb_button($content) {
 	if (is_single()) {
+        echo the_permalink();
 		$content .= '<div class="socialBarContainer gallery-social-bar" id="single_social_buttons_holder">
         <div class="social-share-box ">
-            <a href="#" class="share-item fb"></a>
+            <a href="http://www.facebook.com/sharer.php?u='.get_permalink( $post->ID ).'" target="blank" class="share-item fb"></a>
             <div class="share-item mr"></div>
         </div>         
     </div>';
