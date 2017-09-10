@@ -1,0 +1,58 @@
+.social-share-box .share-item.fb {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #3c569a;
+    height: 42px;
+    line-height: 40px;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.facebook_share, .social-share-box-full .share-item, .social-share-box .share-item.fb {
+
+    float: left;
+
+    position: relative;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+   
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #5377d4;
+    border: solid 1px #203a7e;
+}
+
+.facebook_share::before, .social-share-box-full .share-item::before, .social-share-box .share-item.fb::before {
+    position: absolute;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f09a";
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    left: 10px;
+    color: #fff;
+    font-size: 22px;
+    top: 50%;
+    transform: translateY(-45%);
+}
+
+.facebook_share::after, .social-share-box-full .share-item::after, .social-share-box .share-item.fb::after {
+    content: 'Share on Facebook';
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    position: relative;
+    width: 100%;
+    font-family: 'Montserrat','PT Sans',arial,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.47;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-indent: 22px;
+}
